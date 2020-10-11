@@ -1,11 +1,10 @@
 package searcher;
 
 import java.util.Arrays;
-
 /**
  * A stub class.  CleverSearcher should be implemented here.
  */
-public class CleverSearcher extends Searcher {
+public class CleveSearcher extends Searcher {
     public CleverSearcher(int[] array, int k) throws IndexingError {
         super(array, k);
     }
@@ -36,6 +35,16 @@ public class CleverSearcher extends Searcher {
         int k = getIndex();
         int[] aux_Array = array[1];
 
+        array[1].remove;
+        for (int i =0; i< array.length; i++){
+            array[1] = array[i];
+            if(array[1] < aux_Array[1]){
+
+            }else{
+                aux_Array[1] = array[i];
+            }
+        }
+        System.out.println("the largest number is "+aux_Array[1]);
         return 0;
     } // end of clever solution method
 }
